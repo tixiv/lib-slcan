@@ -239,7 +239,7 @@ static char * put_hex_byte(char * str, uint8_t val){
   return str;
 }
 
-void slcan_handle_can_message(slcan_t * lp, can_message_t *cmsg){
+void slcan_handle_can_message(slcan_t * lp, const can_message_t *cmsg){
   //       cmd  id  dlc data   \r  0
   char buf[ 1  + 8 + 1 + 8*2 + 1 + 1];
   char * str = buf;
@@ -271,7 +271,7 @@ void slcan_handle_can_message(slcan_t * lp, can_message_t *cmsg){
   }
 }
 
-void slcan_string_from_can_message(char * str, can_message_t *cmsg){
+void slcan_string_from_can_message(char * str, const can_message_t *cmsg){
     //       cmd  id  dlc data   \r  0
     //char buf[ 1  + 8 + 1 + 8*2 + 1 + 1];
     //char * str = buf;

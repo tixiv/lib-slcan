@@ -44,11 +44,11 @@ typedef struct{
 
 // for microcontroller with slcan_t callback struct
 void slcan_execute_command(slcan_t * lp, const char * str);
-void slcan_handle_can_message(slcan_t * lp, can_message_t *cmsg);
+void slcan_handle_can_message(slcan_t * lp, const can_message_t *cmsg);
 
 // for using on PC
 bool slcan_can_message_from_string(can_message_t * cmsg, const char * str);
-void slcan_string_from_can_message(char * str, can_message_t *cmsg);
+void slcan_string_from_can_message(char * str, const can_message_t *cmsg);
 const char * slcan_get_baud_string(uint32_t bps);
 
 #ifdef __cplusplus
