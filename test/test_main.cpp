@@ -8,7 +8,7 @@
 #include <string.h>
 #include "UnitTest++/UnitTest++.h"
 
-#include "../../slcan/slcan.h"
+#include "../slcan.h"
 
 SUITE(SlcanTest)
 {

@@ -14,7 +14,7 @@ extern "C" {
 
 #include <stdbool.h>
 #include <stdint.h>
-#include "../slcan/can_message.h"
+#include "can_message.h"
 
 typedef enum{
   can_mode_close,

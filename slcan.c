@@ -5,7 +5,7 @@
  *      Author: tixiv
  */
 
-#include "../slcan/slcan.h"
+#include "slcan.h"
 
 
 static uint8_t read_hex_number_8(const char * str, uint8_t len){
